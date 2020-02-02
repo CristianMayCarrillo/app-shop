@@ -66,7 +66,7 @@ class ProductController extends Controller
             'name.required' => 'Es necesario ingresar un nombre para el producto.',
             'name.min' => 'el nombre del producto debe tener al menos 3 caracteres.',
             'description.required' => 'la descripcion corta es un campo obligatorio.',
-            'description.max' => 'la descripcion corta solo admite hasta 200 caracteres.',
+            'description.max' => 'la descripcion maxima solo admite hasta 200 caracteres.',
             'price.required' => 'es obligatorio un precio para el producto.',
             'price.numeric' => 'Ingrese un precio valido.',
             'price.min' => 'No se admiten valores negativos.'

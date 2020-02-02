@@ -21,7 +21,7 @@ class CreateCartsTable extends Migration
             $table->String('status');   //-> Active, Pending, Approved, Cancelled, finished    
 
             //user_id(FK) customer
-            $table->integer('user_id')->unsigned();
+            $table->bigInteger('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
 
             $table->timestamps();

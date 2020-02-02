@@ -77,7 +77,7 @@
       </div>
       <form method="post" action="{{ url('/cart')}}">
       {{ csrf_field() }}
-        <input type="hidden**" name="product_id" value="{{ $product->id }}">
+        <input type="hidden" name="product_id" value="{{ $product->id }}">
         <div class="modal-body">
             <input type="number" name="quantity" value="1" class="form-control">
         </div>
