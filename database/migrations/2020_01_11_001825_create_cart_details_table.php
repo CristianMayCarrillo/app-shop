@@ -16,12 +16,12 @@ class CreateCartDetailsTable extends Migration
         Schema::create('cart_details', function (Blueprint $table) {
             $table->bigIncrements('id');
 
-            //FK header
-            $table->integer('cart_id')->unsigned();
+            //FK carrito header
+            $table->bigInteger('cart_id')->unsigned();
             $table->foreign('cart_id')->references('id')->on('carts');
 
              //FK para producto
-             $table->integer('product_id')->unsigned();
+             $table->bigInteger('product_id')->unsigned();
              $table->foreign('product_id')->references('id')->on('products');
 
              $table->integer('quantity');
